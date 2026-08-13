@@ -9,7 +9,7 @@ import { PERMISOS } from "../../utils/permisions";
 import Botones from "../../components/ui/Botones";
 import Input from "../../components/ui/Input";
 import ActaIncidentModal from "../../components/ActaIndicentModal/ActaIncidentModal";
-
+ 
 const gravedadBadge = {
     Leve: "success",
     Moderada: "warning",

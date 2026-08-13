@@ -51,7 +51,7 @@ export default function CreateIncidentWorker() {
             confirmButtonText: "Sí, registrar",
             cancelButtonText: "Cancelar"
         });
-
+ 
         if (!result.isConfirmed) {
             return;
         }

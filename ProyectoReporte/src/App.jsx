@@ -1,9 +1,9 @@
 import "./App.css";
 import { Routes, Route, Navigate } from "react-router";
-import CreateIncidentWorker from "./pages/createIncidentWorker/CreateIncidentWorker";
+import CreateIncidentWorker from "./pages/CreateIncidentWorker/CreateIncidentWorker";
 import Dashboard from "./pages/dashboard/Dashboard";
 import CreateIncident from "./pages/createIncident/CreateIncident";
-import WorkerDetail from "./pages/workerDetail/WorkerDetail";
+import WorkerDetail from "./pages/WorkerDetail/WorkerDetail";
 import Login from "./pages/login/Login";
 import NavBar from "./components/navbar/navBar";
 import { useAuth } from "./hook/useAuth";
