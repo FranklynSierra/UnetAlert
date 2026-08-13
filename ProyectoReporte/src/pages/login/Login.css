@@ -1,0 +1,63 @@
+.login-container {
+    min-height: 100vh;
+    background-image: url("../../assets/fondo.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+}
+
+.login-container::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    /* Oscurece el fondo */
+    background: rgba(0, 0, 0, 0.7);
+}
+.logo-blanco {
+    filter: brightness(0) invert(1);
+}
+.login-card {
+    position: relative;
+    z-index: 1;
+
+    width: 100%;
+    max-width: 400px;
+    padding: 2rem;
+
+    border-radius: 20px;
+
+    /* Fondo semitransparente */
+    background: rgba(255, 255, 255, 0.15);
+
+    /* Desenfoque del fondo */
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    border: 1px solid rgba(255,255,255,.2);
+
+    box-shadow: 0 8px 32px rgba(0,0,0,.3);
+}
+.form-select {
+    background: rgba(255,255,255,.15);
+    color: white;
+    border: 1px solid rgba(255,255,255,.25);
+    backdrop-filter: blur(12px);
+}
+
+.form-select:focus {
+    background: rgba(255,255,255,.2);
+    color: white;
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 .2rem rgba(13,110,253,.25);
+}
+
+.form-select option {
+    color: black;
+}
