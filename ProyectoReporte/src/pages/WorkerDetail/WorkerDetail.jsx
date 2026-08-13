@@ -5,10 +5,11 @@ import Swal from "sweetalert2";
 import { db } from "../../services/firebase";
 import { useWorkerIncidents } from "../../hook/useWorkerIncidents";
 import { useAuth } from "../../hook/useAuth";
-import { PERMISOS } from "../../utils/permisions";
+
 import Botones from "../../components/ui/Botones";
 import Input from "../../components/ui/Input";
 import ActaIncidentModal from "../../components/ActaIndicentModal/ActaIncidentModal";
+import { PERMISOS } from "../../utils/permisions";
  
 const gravedadBadge = {
     Leve: "success",

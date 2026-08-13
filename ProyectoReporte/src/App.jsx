@@ -1,9 +1,9 @@
 import "./App.css";
 import { Routes, Route, Navigate } from "react-router";
-import CreateIncidentWorker from "./pages/CreateIncidentWorker/CreateIncidentWorker";
+
 import Dashboard from "./pages/dashboard/Dashboard";
 import CreateIncident from "./pages/createIncident/CreateIncident";
-import WorkerDetail from "./pages/WorkerDetail/WorkerDetail";
+
 import Login from "./pages/login/Login";
 import NavBar from "./components/navbar/navBar";
 import { useAuth } from "./hook/useAuth";
@@ -13,6 +13,8 @@ import EditIncident from "./pages/EditIncident/EditIncident";
 import Register from "./pages/register/Register";
 import { PERMISOS } from "./utils/permisions";
 import StudentDetail from "./pages/studentDetail/StudentDetail";
+import CreateIncidentWorker from "./pages/CreateIncidentWorker/CreateIncidentWorker";
+import WorkerDetail from "./pages/WorkerDetail/WorkerDetail";
 
 function App() {
 
