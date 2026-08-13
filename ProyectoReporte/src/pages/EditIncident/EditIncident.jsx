@@ -48,7 +48,7 @@ export default function EditIncident() {
     const deleteImageCloudinary = async (publicId) => {
 
         const response = await fetch(
-            "http://localhost:3001/api/cloudinary/delete",
+`${import.meta.env.VITE_API_URL}/api/cloudinary/delete`,
             {
                 method: "POST",
                 headers: {

@@ -40,7 +40,7 @@ export default function Register() {
             const token = await user.getIdToken();
 
             const response = await fetch(
-                "http://localhost:3001/api/users/register",
+                 `${import.meta.env.VITE_API_URL}/api/users/register`,
                 {
                     method: "POST",
                     headers: {

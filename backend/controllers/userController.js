@@ -8,7 +8,7 @@ export const createUser = async (req, res) => {
         const usuarioActual = req.user;
 
         // Solo el administrador puede registrar usuarios
-        if (usuarioActual.rol !== "admin") {
+        if (usuarioActual.rol == "vigilante") {
             return res.status(403).json({
                 message: "No tiene permisos para registrar usuarios."
             });

@@ -14,16 +14,12 @@ export const PERMISOS = {
     ],
 
     REGISTRAR_USUARIOS: [
-        "rectorado",
-    
+           "rectorado",
         "directora_seguridad",
         "jefe_departamento",
         "admin"
     ],
-    //quitar de todo consultoria juridica
-//telefono estuiante
-//correo del estudiante
-//quitar gravedad
+   
 
 //ACTA EN  EL PERFIL DEL ESTUDIANTE Y SOLO JEFE DEPARTAMENTO Y SGURIDAD
 

@@ -1,10 +1,10 @@
 import { useState } from "react";
 import {
     signInWithEmailAndPassword,
-    signInWithPopup,
+
 } from "firebase/auth";
 
-import { auth, googleProvider } from "../../services/firebase";
+import { auth,  } from "../../services/firebase";
 
 import Input from "../../components/ui/Input";
 import Botones from "../../components/ui/Botones";
@@ -48,22 +48,7 @@ const navigate = useNavigate();
         }
     };
 
-    // ===========================
-    // Login con Google
-    // ===========================
-    const handleGoogleLogin = async () => {
-        try {
-
-            await signInWithPopup(auth, googleProvider);
-
-            alert("¡Sesión iniciada con Google!");
-
-        } catch (error) {
-            console.error(error);
-            alert(error.message);
-        }
-    };
-
+  
     // ===========================
     // Vista
     // ===========================
@@ -148,19 +133,7 @@ const navigate = useNavigate();
 
                 {/* Separador */}
 
-                <div className="text-center text-white mb-3">
-                    ───── o ─────
-                </div>
-
-                {/* Google */}
-
-                <Botones
-                    type="button"
-
-                    className="w-100 btn-primary"
-                    texto="Continuar con Google"
-                    onClick={handleGoogleLogin}
-                />
+            
 
             </form>
         </div>
