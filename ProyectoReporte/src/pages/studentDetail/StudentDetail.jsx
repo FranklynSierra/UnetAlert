@@ -316,20 +316,35 @@ export default function StudentDetail() {
                             <hr />
 
                             <div className="row g-3">
-                                <div className="col-md-6">
-                                    <label className="text-muted small text-uppercase fw-semibold">
-                                        Carrera
-                                    </label>
-                                    {editing ? (
-                                        <Input
-                                            type="text"
-                                            value={form.carrera}
-                                            onChange={(e) => setForm({ ...form, carrera: e.target.value })}
-                                        />
-                                    ) : (
-                                        <p className="mb-0 fw-medium">{effectiveStudent.carrera || "No especificada"}</p>
-                                    )}
-                                </div>
+                               <div className="col-md-6">
+    <label className="text-muted small text-uppercase fw-semibold">
+        Carrera
+    </label>
+    {editing ? (
+        <select
+            className="form-select text-black"
+            value={form.carrera}
+            onChange={(e) => setForm({ ...form, carrera: e.target.value })}
+        >
+            <option value="">Seleccione...</option>
+            <option value="ING Informática">ING Informática</option>
+            <option value="ING mecánica">ING mecánica</option>
+            <option value="ING electronica">ING electronica</option>
+            <option value="ING agroindustrial">ING agroindustrial</option>
+            <option value="ING ambiental">ING ambiental</option>
+            <option value="ING en producción animal">ING en producción animal</option>
+            <option value="ING industrial">ING industrial</option>
+            <option value="ING civil">ING civil</option>
+            <option value="Licenciatura en psicología">Licenciatura en psicología</option>
+            <option value="Licenciatura en música">Licenciatura en música</option>
+            <option value="Licenciatura en entrenamiento deportivo">Licenciatura en entrenamiento deportivo</option>
+            <option value="Agronomía">Agronomía</option>
+            <option value="Arquitectura">Arquitectura</option>
+        </select>
+    ) : (
+        <p className="mb-0 fw-medium">{effectiveStudent.carrera || "No especificada"}</p>
+    )}
+</div>
 
                                 <div className="col-md-6">
                                     <label className="text-muted small text-uppercase fw-semibold">
