@@ -393,15 +393,30 @@ export default function CreateIncident() {
                                         </div>
 
                                         <div className="mb-3">
-                                            <label className="form-label fw-semibold">
-                                                Carrera del estudiante <span className="text-danger">*</span>
-                                            </label>
-                                            <Input
-                                                type="text"
-                                                value={studentCareer}
-                                                onChange={(e) => setStudentCareer(e.target.value)}
-                                            />
-                                        </div>
+    <label className="form-label fw-semibold">
+        Carrera del estudiante <span className="text-danger">*</span>
+    </label>
+    <select
+        className="form-select text-black shadow-sm"
+        value={studentCareer}
+        onChange={(e) => setStudentCareer(e.target.value)}
+    >
+        <option value="">Seleccione...</option>
+        <option value="ING Informática">ING Informática</option>
+        <option value="ING mecánica">ING mecánica</option>
+        <option value="ING electronica">ING electronica</option>
+        <option value="ING agroindustrial">ING agroindustrial</option>
+        <option value="ING ambiental">ING ambiental</option>
+        <option value="ING en producción animal">ING en producción animal</option>
+        <option value="ING industrial">ING industrial</option>
+        <option value="ING civil">ING civil</option>
+        <option value="Licenciatura en psicología">Licenciatura en psicología</option>
+        <option value="Licenciatura en música">Licenciatura en música</option>
+        <option value="Licenciatura en entrenamiento deportivo">Licenciatura en entrenamiento deportivo</option>
+        <option value="Agronomía">Agronomía</option>
+        <option value="Arquitectura">Arquitectura</option>
+    </select>
+</div>
 
                                         <div className="row">
                                             <div className="col-md-6 mb-1">

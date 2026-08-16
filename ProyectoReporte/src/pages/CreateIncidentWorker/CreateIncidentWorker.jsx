@@ -476,6 +476,10 @@ export default function CreateIncidentWorker() {
                                 <option value="Robo">Robo</option>
                                 <option value="Daños">Daños a la propiedad</option>
                                 <option value="Consumo de sustancias">Consumo de sustancias</option>
+                                  <option value="Falta de respeto">Falta de respeto</option>
+                                <option value="No se presentó a la guardia">No se presentó a la guardia</option>
+                                <option value="abandono del puesto de trabajo">abandono del puesto de trabajo</option>
+                                <option value="Impuntualidad">Impuntualidad</option>
                                 <option value="Otro">Otro</option>
                             </select>
                         </div>
